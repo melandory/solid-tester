@@ -49,6 +49,7 @@ class AudioCdTest: public QObject
          */
         void slotRemoveSolidDevice( const QString &udi )
         {
+            qDebug() << "Device with udi" << udi << "was removed";
             if( identifySolidDevice( udi ) )
                 qDebug() << "AudioCD with udi" << udi << "was ejected";
         }
